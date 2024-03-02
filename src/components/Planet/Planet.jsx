@@ -5,6 +5,7 @@ import { UrlContext } from '../../context/UrlContext';
 
 import './Planet.css'
 
+
 function Planet() {
 
     const {planet, names} = React.useContext(UrlContext)
@@ -21,7 +22,8 @@ function Planet() {
     <div className='residents'> 
     {
         planet.map((resi) => (
-            <div>
+            <div  className="button-40">
+            <img src="https://i.pinimg.com/originals/2b/d3/8e/2bd38e31a22877a17fa63e3d771f8624.gif" alt=''/>
             <h3>Name : {resi.name}</h3>
             <h4>Height : {resi.height}</h4>
             <h5>Mass : {resi.mass}</h5>

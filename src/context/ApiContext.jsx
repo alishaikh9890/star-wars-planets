@@ -33,7 +33,7 @@ console.log(planets)
 
 
   return (
-    <ApiContext.Provider value={{planets, page, setPage, totalItems}}>
+    <ApiContext.Provider value={{error, loading, planets, page, setPage, totalItems}}>
         {children}
     </ApiContext.Provider>
   )

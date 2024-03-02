@@ -8,13 +8,9 @@ function Navbar() {
 
     <img src="https://i.pinimg.com/originals/ed/a4/3a/eda43aca52541b9799b0b81b2fb47ddd.gif" alt=""/>
 
-  <Link style={{margin:"auto", fontSize:"25px"}} to="/">STAR WARS PLANETS</Link>
+  <h1>STAR WARS PLANETS</h1>
 
-  <Link class="button" to="/">⬅ Home</Link>
-
-
-
- 
+  <Link style={{margin:"auto 0", marginRight:"80px"}} to="/"><button class="custom-btn btn-3">⬅ Home</button></Link>
     
     </div>
   )

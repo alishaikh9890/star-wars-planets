@@ -1,13 +1,25 @@
 .navbar{
-    
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-    padding:20px;
-    display: flex;
-    justify-content: space-evenly;
+    /* background-image: url("https://i.pinimg.com/originals/90/2f/b6/902fb683da6e99129aa43990f81607cd.gif"); */
+    box-shadow: rgba(133, 187, 209, 0.8) 0px 1px 0px;
+    padding:5px 20px;
     position: fixed;
     width: 100%;
-    background-color: white;
-    
+    display: flex;
+    justify-content: space-evenly;
+    background:transparent;
+    backdrop-filter: blur(20px);
+    z-index: 10000;
+}
+
+.navbar h1{
+    font-family: 'Megrim', cursive;
+    margin: auto;
+    text-shadow: 
+        0 0 5px #0bf4f3,
+        0 0 10px #0bf4f3,
+        0 0 20px #0bf4f3,
+        0 0 40px #0bf4f3,
+        0 0 80px #0bf4f3;
 }
 
 .navbar > img{
@@ -15,17 +27,6 @@
     border-radius: 50%;
 }
 
-.navbar > a{
-    padding:5px 10px;
-    text-decoration: none ;
-    font-weight: 600;
-}
-
-.navbar > a:hover{
-    color:white;
-    background-color: black;
-    border-radius: 5px;
-}
 
 .button{
     border:1px solid white;
