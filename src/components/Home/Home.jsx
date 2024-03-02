@@ -9,7 +9,7 @@ import { UrlContext } from '../../context/UrlContext';
 
 function Home() {
 
-const { planets, page, setPage, totalItems, error, loading } = React.useContext(ApiContext)
+const { planets, page, setPage, totalItems, error, loading } = useContext(ApiContext)
 const {handleClick} = React.useContext(UrlContext)
 
   return (
@@ -40,7 +40,7 @@ const {handleClick} = React.useContext(UrlContext)
               /*/ }
 
 
-                <button class="custom-btn btn-3" onClick={() => handleClick(planet.residents, planet.name)}>Residence </button>
+                <button className="custom-btn btn-3" onClick={() => handleClick(planet.residents, planet.name)}>Residence </button>
 
             </div>
         ))
@@ -49,13 +49,13 @@ const {handleClick} = React.useContext(UrlContext)
     </div>
 
     <div className='navigation'>
-    <button style={{width:"100px", height:"35px"}} class="custom-btn btn-3" onClick={() => setPage(page - 1)} disabled={page===1} >
+    <button style={{width:"100px", height:"35px"}} className="custom-btn btn-3" onClick={() => setPage(page - 1)} disabled={page===1} >
     ⬅ PREV
     </button>
 
     <h3>{page}</h3>
 
-<button style={{width:"100px", height:"35px"}} class="custom-btn btn-3"
+<button style={{width:"100px", height:"35px"}} className="custom-btn btn-3"
  onClick={() => setPage(page + 1)}
   disabled={page===Math.ceil(totalItems / 3)} 
  

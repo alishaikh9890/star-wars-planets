@@ -10,6 +10,45 @@
     backdrop-filter: blur(20px);
     z-index: 10000;
 }
+@media (max-width:650px){
+    .navbar{
+        top:49px;
+    }
+}
+
+
+/* Title */
+
+.title{
+
+    position: fixed;
+    width: 100%;
+    top:0px;
+    z-index: 10000;
+        font-family: 'Megrim', cursive;
+        margin: auto;
+        text-shadow: 
+            0 0 5px #0bf4f3,
+            0 0 10px #0bf4f3,
+            0 0 20px #0bf4f3,
+            0 0 40px #0bf4f3,
+            0 0 80px #0bf4f3;
+            border-bottom: 1px solid #0bf4f3;
+            backdrop-filter: blur(20px);
+    }
+
+    .title > h1{
+        margin: 5px;
+    }
+
+    @media (min-width:650px){
+        .title{
+            display: none;
+        }
+    }
+
+
+
 
 .navbar h1{
     font-family: 'Megrim', cursive;
@@ -22,9 +61,24 @@
         0 0 80px #0bf4f3;
 }
 
+@media (max-width:650px){
+    .navbar{
+        justify-content: space-between;
+    }
+    .navbar h1{
+        display: none;
+    }
+}
+
 .navbar > img{
     width: 100px;
     border-radius: 50%;
+}
+
+@media (max-width:650px){
+    .navbar > img{
+        width: 70px;
+    }
 }
 
 

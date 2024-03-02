@@ -8,7 +8,7 @@ import './Planet.css'
 
 function Planet() {
 
-    const {planet, loading, error, names} = React.useContext(UrlContext)
+    const {planet, loading, error, names} = useContext(UrlContext)
 
     console.log(planet)
 
@@ -42,7 +42,7 @@ function Planet() {
    
     </div>
 
-    <Link  to="/"><button class="custom-btn btn-3">⬅ Home</button></Link>
+    <Link  to="/"><button className="custom-btn btn-3">⬅ Home</button></Link>
     </div>
   )
 }

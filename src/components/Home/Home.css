@@ -124,7 +124,7 @@
     right: 0;
     z-index: -1;
   /*   background: #00aced; */
-    box-shadow: 0 0 5px #00aced;
+    /* box-shadow: 0 0 5px #00aced; */
     transition: all 0.3s ease;
   }
   .btn-3:before {
