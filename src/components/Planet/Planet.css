@@ -1,3 +1,16 @@
+.planet b{
+    /* font-family: 'Megrim', cursive; */
+    margin: auto;
+    font-size: 50px;
+    text-shadow: 
+        0 0 5px #ea4444,
+        0 0 10px #ea4444,
+        0 0 20px #ea4444,
+        0 0 40px #ea4444,
+        0 0 80px #ea4444;
+}
+
+
 .planet{
     padding: 30px;
     padding-top: 100px;
@@ -11,15 +24,24 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 60px;
+    margin-bottom: 50px;
 }
 
 
 
-@media (max-width:992px){
+@media (max-width:1140px){
+    .residents{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+    }
+}
+
+@media (max-width:868px){
     .residents{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        gap: 50px;
     }
 }
 
@@ -27,7 +49,7 @@
     .residents{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
+        gap: 50px;
     }
 }
 

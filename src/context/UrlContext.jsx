@@ -31,7 +31,7 @@ setNames(name)
 // console.log(planet)
 
   return (
-    <UrlContext.Provider value={{planet, names, handleClick}}>
+    <UrlContext.Provider value={{planet, loading, error, names, handleClick}}>
         {children}
     </UrlContext.Provider>
   )

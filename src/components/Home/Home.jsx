@@ -16,8 +16,8 @@ const {handleClick} = React.useContext(UrlContext)
     <div className='home'>
     <div className='planets'>
     { loading ? (
-      // <img src='https://i.pinimg.com/originals/83/0e/0f/830e0fdceaf364e4eb90d734f95dab7b.gif' alt="" />
-      <h1>loading....</h1>
+      <div><img src='https://i.pinimg.com/originals/83/0e/0f/830e0fdceaf364e4eb90d734f95dab7b.gif' alt="" />
+      </div>
     ) : error ? (
       <h2> something Went Wrong</h2>
     ) : (

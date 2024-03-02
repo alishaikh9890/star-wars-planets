@@ -10,7 +10,7 @@ function Navbar() {
 
   <h1>STAR WARS PLANETS</h1>
 
-  <Link style={{margin:"auto 0", marginRight:"80px"}} to="/"><button class="custom-btn btn-3">⬅ Home</button></Link>
+  <Link className='navHome' to="/"><button class="custom-btn btn-3">⬅ Home</button></Link>
     
     </div>
   )

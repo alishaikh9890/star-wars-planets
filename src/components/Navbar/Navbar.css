@@ -38,3 +38,15 @@
 .button:hover{
     background-color: gray;
 }
+
+.navHome{
+   margin:auto 0;
+         margin-right:80px
+}
+
+@media (max-width:600px){
+    .navHome{
+        margin:auto 0;
+              margin-right:50px
+     } 
+}
