@@ -1,0 +1,39 @@
+.planet{
+    padding: 30px;
+    padding-top: 100px;
+}
+
+/* .planet > div{
+    border: 1px solid gray;
+} */
+
+.residents{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+
+@media (max-width:992px){
+    .residents{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width:550px){
+    .residents{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}
+
+
+.residents > div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 5px;
+    border-radius: 10px;
+}
