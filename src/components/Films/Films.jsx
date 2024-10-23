@@ -3,12 +3,12 @@ import { useParams } from "react-router-dom";
 import { Link } from 'react-router-dom'
 import { UrlContext } from '../../context/UrlContext';
 
-import './Planet.css'
+import './Films.css'
 
 
-function Planet() {
+function Films() {
 
-    const {planet, loading, error, names, handleFilms} = useContext(UrlContext)
+    const {planet, loading, error, resident, film} = useContext(UrlContext)
 
     console.log(planet)
 
@@ -17,7 +17,7 @@ function Planet() {
   return (
     <div className='planet'>
     <div>
-    <h1 style={{marginBottom:"50px"}}>Residence of <b>{names}</b></h1>
+    <h1 style={{marginBottom:"50px"}}>Films of <b>{resident}</b></h1>
 
     <div className='residents'> 
     {
@@ -27,14 +27,14 @@ function Planet() {
       ) : error ? (
         <h2> something Went Wrong</h2>
       ) : (
-        planet.map((resi) => (
+        film.map((mov) => (
             <div  className="button-40">
-            <img src="https://i.pinimg.com/originals/2b/d3/8e/2bd38e31a22877a17fa63e3d771f8624.gif" alt=''/>
-            <h3>Name : {resi.name}</h3>
-            <h4>Height : {resi.height}</h4>
-            <h5>Mass : {resi.mass}</h5>
-            <h5>Gender : {resi.gender}</h5>
-            <button className="custom-btn btn-3"  onClick={() => handleFilms(resi.films, resi.name)}>films </button>
+            <img src="https://i.pinimg.com/originals/66/b8/e7/66b8e707bd733eb000aec5d3a8892c1b.gif" alt=''/>
+            <h3>Name : {mov.title}</h3>
+            <h4>Height : {mov.director}</h4>
+            <h5>Mass : {mov.producer}</h5>
+            <h5>Gender : {mov.release_date}</h5>
+            <button className="custom-btn btn-3"  >vehicles </button>
             </div>
         ))
       )
@@ -48,4 +48,4 @@ function Planet() {
   )
 }
 
-export default Planet
+export default Films;

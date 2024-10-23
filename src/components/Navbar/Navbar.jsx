@@ -12,7 +12,9 @@ function Navbar() {
   <h1>STAR WARS PLANETS</h1>
 
   <Link className='navHome' to="/"><button className="custom-btn btn-3">⬅ Home</button></Link>
-    
+
+  <button className='custom-btn btn-3' data-bs-toggle="modal" data-bs-target="#modal">MODAL</button>
+
     </div>
   )
 }

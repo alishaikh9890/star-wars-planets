@@ -16,19 +16,20 @@ const {handleClick} = React.useContext(UrlContext)
     <div className='home'>
     <div className='planets'>
     { loading ? (
-      <div><img src='https://i.pinimg.com/originals/83/0e/0f/830e0fdceaf364e4eb90d734f95dab7b.gif' alt="" />
+      <div><img src='https:/i.pinimg.com/originals/83/0e/0f/830e0fdceaf364e4eb90d734f95dab7b.gif' alt="" />
       </div>
     ) : error ? (
-      <h2> something Went Wrong</h2>
+      <h2 style={{color:"white", textShadow:"1px 1px red"}} > Planets losts</h2>
     ) : (
       
         planets.map((planet) => (
             <div key={planet.name}  className="button-40" >
-            <img src='https://i.pinimg.com/originals/3e/55/2f/3e552ff46b95bd34259c0025279873fc.gif' alt='' />
+            <img src='https:/i.pinimg.com/originals/3e/55/2f/3e552ff46b95bd34259c0025279873fc.gif' alt='' />
                <h3>Name : {planet.name}</h3>
                <h4>Climate : {planet.climate}</h4>
                <h5>Population : {planet.population}</h5>
                <h4>Terrain : {planet.terrain}</h4>
+
                 {/*
               // planet.residents.map((resi, index) => (
               //   <ul>
@@ -38,7 +39,6 @@ const {handleClick} = React.useContext(UrlContext)
               <Link to={`/planet/${planet.name}`}>Residence</Link>
               <button onClick={() => setUrl(planet.residents)}>Residence </button>
               /*/ }
-
 
                 <button className="custom-btn btn-3" onClick={() => handleClick(planet.residents, planet.name)}>Residence </button>
 
