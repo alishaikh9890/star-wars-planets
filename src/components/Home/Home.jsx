@@ -24,7 +24,7 @@ const {handleClick} = React.useContext(UrlContext)
       
         planets.map((planet) => (
             <div key={planet.name}  className="button-40" >
-            <img src='https:/i.pinimg.com/originals/3e/55/2f/3e552ff46b95bd34259c0025279873fc.gif' alt='' />
+            <img src='https://i.pinimg.com/originals/ed/a4/3a/eda43aca52541b9799b0b81b2fb47ddd.gif' alt='' />
                <h3>Name : {planet.name}</h3>
                <h4>Climate : {planet.climate}</h4>
                <h5>Population : {planet.population}</h5>
