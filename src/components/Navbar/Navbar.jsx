@@ -7,7 +7,7 @@ function Navbar() {
     <div className='navbar'>
 
 
-   <img src="https://i.pinimg.com/originals/ed/a4/3a/eda43aca52541b9799b0b81b2fb47ddd.gif" alt=""/>
+   <img src="https://i.pinimg.com/originals/20/81/27/2081270ee56f88c770bff6bd05867e05.gif" alt=""/>
 
   <h1>STAR WARS PLANETS</h1>
 
