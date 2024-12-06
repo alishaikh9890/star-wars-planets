@@ -3,12 +3,12 @@ import { useParams } from "react-router-dom";
 import { Link } from 'react-router-dom'
 import { UrlContext } from '../../context/UrlContext';
 
-import './Planet.css'
+import './Vehicle.css'
 
 
-function Planet() {
+function Vehicle() {
 
-    const {planet, loading, error, names, handleFilms} = useContext(UrlContext)
+    const {planet, loading, error, resident, film, vehicle, movie} = useContext(UrlContext)
 
     console.log(planet)
 
@@ -17,7 +17,7 @@ function Planet() {
   return (
     <div className='planet'>
     <div>
-    <h1 style={{marginBottom:"50px"}}>Residence of <b>{names}</b></h1>
+    <h1 style={{marginBottom:"50px"}}>Name of Vehicle <b>{movie}</b></h1>
 
     <div className='residents'> 
     {
@@ -27,14 +27,14 @@ function Planet() {
       ) : error ? (
         <h2> something Went Wrong</h2>
       ) : (
-        planet.map((resi) => (
+        vehicle.map((veh) => (
             <div  className="button-40">
-            <img src="https://i.pinimg.com/originals/2b/d3/8e/2bd38e31a22877a17fa63e3d771f8624.gif" alt=''/>
-            <p>Name : {resi.name}</p>
-            <p>Height : {resi.height}</p>
-            <p>Mass : {resi.mass}</p>
-            <p>Gender : {resi.gender}</p>
-            <button className="custom-btn btn-3"  onClick={() => handleFilms(resi.films, resi.name)}>films </button>
+            <img src="https://i.pinimg.com/originals/99/4c/f8/994cf894ea11bacd972d08dfa0dea5cc.gif" alt=''/>
+            <p>Name : {veh.name}</p>
+            <p>Model : {veh.model}</p>
+            <p>Manu. : {veh.manufacturer}</p>
+            <p>Cost : {veh.cost_in_credits}</p>
+            <button className="custom-btn btn-3"  >vehicles </button>
             </div>
         ))
       )
@@ -48,4 +48,4 @@ function Planet() {
   )
 }
 
-export default Planet
+export default Vehicle;

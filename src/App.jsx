@@ -6,13 +6,13 @@ import Navbar from './components/Navbar/Navbar';
 import Planet from './components/Planet/Planet';
 import Films from './components/Films/Films';
 import Title from './components/Navbar/Title';
+import Vehicle from './components/Vehicle/Vehicle';
 
 function App() {
   return (
     <div className="App">
-
   
- <Title />
+    <Title />
     <Navbar/>
 
 
@@ -40,6 +40,7 @@ function App() {
        <Route path="/" element={<Home/>} />
        <Route path="/planet" element={<Planet />} />
        <Route path="/film" element={<Films />} />
+       <Route path='/vehicle' element={<Vehicle/>} />
 
     </Routes>
       

@@ -27,7 +27,7 @@ useEffect(() => {
 }, [page])
 
 
-console.log(planets)
+// console.log(planets)
 
   return (
     <ApiContext.Provider value={{error, loading, planets, page, setPage, totalItems}}>

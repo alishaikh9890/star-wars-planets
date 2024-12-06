@@ -25,10 +25,10 @@ const {handleClick} = React.useContext(UrlContext)
         planets.map((planet) => (
             <div key={planet.name}  className="button-40" >
             <img src='https://i.pinimg.com/originals/ed/a4/3a/eda43aca52541b9799b0b81b2fb47ddd.gif' alt='' />
-               <h3>Name : {planet.name}</h3>
-               <h4>Climate : {planet.climate}</h4>
-               <h5>Population : {planet.population}</h5>
-               <h4>Terrain : {planet.terrain}</h4>
+               <p>Name : {planet.name}</p>
+               <p>Climate : {planet.climate}</p>
+               <p>Population : {planet.population}</p>
+               <p>Terrain : {planet.terrain}</p>
 
                 {/*
               // planet.residents.map((resi, index) => (
